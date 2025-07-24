@@ -31,6 +31,8 @@ public class UserDaoImpl extends BaseDao implements UserDao {
 				user.setUsername(username);
 				user.setHash(hashString);
 				user.setSalt(saltString);
+				
+				users.add(user);
 			}
 
 		} catch (SQLException e) {
